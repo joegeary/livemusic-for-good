@@ -34,7 +34,7 @@ export default class RestUtilities {
 
         let isJsonResponse: boolean = false;
         let isBadRequest = false;
-        let body = data;
+        let body: string = null;
         let headers = new Headers();
 
         headers.set('Authorization',`Bearer ${AuthStore.getToken()}`);
@@ -46,6 +46,7 @@ export default class RestUtilities {
                 body = JSON.stringify(data);
             } else {
                 headers.set('Content-Type','application/x-www-form-urlencoded');
+                body = data;
             }
         }
 

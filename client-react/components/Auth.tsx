@@ -75,7 +75,7 @@ export class SignIn extends React.Component<RouteComponentProps<any>, any> {
     }
 }
 
-export class Register extends React.Component<any, any> {
+export class Register extends React.Component<RouteComponentProps<any>, any> {
     refs: {
         email: HTMLInputElement;
         password: HTMLInputElement;
