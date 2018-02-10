@@ -1,0 +1,33 @@
+.DS_Store
+
+# dotnet core
+bin/
+obj/
+project.lock.json
+.NETCoreApp,Version=v2.0.AssemblyAttributes.cs
+NuGetScratch/
+
+api/wwwroot/**
+!api/wwwroot/scratch.html
+!api/wwwroot/favicon.ico
+
+# node
+node_modules/
+typings/
+npm-debug.log
+
+# client-react
+client-react/components/*.js
+client-react.test/build
+!client-react.test/build/client-react/styles/
+
+# ops
+ops/hosts
+ops/*.retry
+
+# other
+*.js.map
+
+# IDE
+.idea/
+.vs/
